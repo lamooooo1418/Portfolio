@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lama_Portfolio</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <nav>
+    <br>
+     <br>
+      <br>
+      <div class ="Nav" >
+       <%= link_to "Home",  pages_home_url %> |
+       <%= link_to "About",  pages_about_url %> |
+      <%= link_to "Contact",  pages_contact_url %>  
+       </div>
+<br>
+<br>
+
+
+
+<h2> Lama Alaskar Portifolio </h2>
+<h3> Software Engneering </h3>
+    </nav>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
